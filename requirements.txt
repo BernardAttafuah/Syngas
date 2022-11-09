@@ -9,3 +9,4 @@ seaborn==0.12.1
 streamlit==1.14.0
 sympy==1.10.1
 xgboost==1.6.2
+plotly==2.14. 0
