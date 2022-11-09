@@ -14,6 +14,7 @@ import warnings
 import xgboost
 import IPython as ipy
 import joblib
+import pycaret
 import numpy as np
 from scipy import *
 from scipy.integrate import *
@@ -62,8 +63,30 @@ st.subheader('User input parameters')
 st.write(data_f)
 df = pd.read_csv('dataset.csv')
 
-st.write(df)
 
+
+from pycaret.regression import *
+exp = setup(data=df,target='Heat Value (MJ/m^3)', normalize=False,remove_outliers=True,silent=True)
+#Extracting parameters from pycaret's experiment
+X = get_config(variable='X')
+#X.head()
+X_test = get_config(variable='X_test')
+X_train = get_config(variable='X_train')
+y_train= get_config(variable='y_train')
+y_trained= get_config(variable='y_train')
+y_test= get_config(variable='y_test')
+#X_test.head()
+y_test = pd.DataFrame(y_test).reset_index(drop=True)
+y_trained = pd.DataFrame(y_trained).reset_index(drop=True)
+#y_test 
+
+model = load_model('savedmodel')
+
+pred = predict_model(model,data=data_f)
+pred['Predicted Heating Value MJ/m^3'] = pred['Label']
+value = pred['Predicted Heating Value MJ/m^3']
+st.write(round((value),1))
+evaluate_model(model)
 x,dF,dW,rate,FAo,dX,k,CA,CB,T,CAo = symbols('x dF dW rate FAo dX k CA CB T CAo',real = True,positive = True)
 epsilon,X,rate,FBo,W,r,DW,D_W,w,FA_O = symbols('epsilon X rate FBo W r DW D_W w FA_O',real = True,positive = True)
 
