@@ -95,7 +95,7 @@ plt.xlabel('Weight(Catalyst)-kg')
 plt.ylabel('Temperature (K)')
 plt.grid(c='g')
 plt.show()
-st.plotly_chart(fig1)
+st.pyplot(fig1)
 fig2 = plt.figure()
 plt.plot(w,o[:,1],c= 'b', linewidth=2.3)
 plt.title('Conversion Profile')
@@ -103,7 +103,7 @@ plt.xlabel('Weight(Catalyst)-kg')
 plt.ylabel('Conversion %')
 plt.grid(c= 'g')
 plt.show()
-st.plotly_chart(fig2)
+st.pyplot(fig2)
 
 
 ###############################################
