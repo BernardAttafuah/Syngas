@@ -2,11 +2,6 @@
 import streamlit as st
 import sympy as smp
 from sympy import*
-
-
-
-########################################################
-
 #setting up the variables
 st.write('Syngas Balanced Equation')
 
