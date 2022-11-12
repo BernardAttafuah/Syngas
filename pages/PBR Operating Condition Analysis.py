@@ -16,6 +16,13 @@ st.markdown(
 '<div style = "text-align:center;"><b><h5>Summary of Selected Parameters<h/5></b></div>',unsafe_allow_html=True
 
 )
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.sidebar.success('Input Operating Conditions')
 
 FAo = st.sidebar.number_input('Methane Flow Rate (mol/sec)',500,1000000)
