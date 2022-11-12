@@ -4,7 +4,7 @@ import streamlit as st
 import sympy as smp
 from sympy import*
 st.set_page_config(
-          page_title="Home Page",
+          page_title="Syngas Operating Parameter Process Analysis",
           page_icon="🧊",
           layout="wide",
           initial_sidebar_state="expanded",
