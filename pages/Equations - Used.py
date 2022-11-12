@@ -2,7 +2,6 @@
 import streamlit as st
 import sympy as smp
 from sympy import*
-#setting up the variables
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -11,17 +10,11 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.write('Syngas Balanced Equation')
-
-
 st.latex('''
 CH_4 + H_2O  -> CO + 3H_2
 ''')
-
 st.write('Where: A is CH4 & B  is H2O')
-
-
 st.write('Mole Balance for Packed Bed Reactore - PBR')
-
 x,dF,dW,rate,FAo,dX,k,CA,CB,T,CAo = symbols('x dF dW rate FAo dX k CA CB T CAo',real = True,positive = True)
 epsilon,X,rate,FBo,W,r,DW,D_W,w,FA_O = symbols('epsilon X rate FBo W r DW D_W w FA_O',real = True,positive = True)
 
