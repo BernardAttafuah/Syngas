@@ -11,3 +11,7 @@
 * Danyl Oppong
 * Theophilus Baidoo
 * Godfrey Effah
+
+**Disclaimer**
+* This is meant for learning purposes.
+* Please reuse responsibly and make citations as appropriate
