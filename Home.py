@@ -29,6 +29,9 @@ mystyle = '''
     '''
 
 st.markdown(mystyle, unsafe_allow_html=True)
+st.set_page_config(
+    page_title='Syngas Operating Condition Analysis'   
+)
     
 
 
