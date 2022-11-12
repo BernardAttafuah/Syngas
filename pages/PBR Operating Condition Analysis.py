@@ -9,13 +9,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 st.set_page_config(
-
-    page_title='PBR Operating Condition Analysis'
-    
+    page_title='PBR Operating Condition Analysis'   
 )
-
-#######################################################
-
 st.markdown(
 
 '<div style = "text-align:center;"><b><h5>Summary of Selected Parameters<h/5></b></div>',unsafe_allow_html=True
