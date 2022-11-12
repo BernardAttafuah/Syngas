@@ -5,6 +5,12 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
+st.set_page_config(
+
+    page_title='Syngas Operating Parameter Analysis'
+    
+)
+
 
 hide_streamlit_style = """
             <style>
