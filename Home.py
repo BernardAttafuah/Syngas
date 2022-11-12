@@ -5,6 +5,32 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
+def set_page_title(title):
+    st.sidebar.markdown(unsafe_allow_html=True, body=f"""
+        <iframe height=0 srcdoc="<script>
+            const title = window.parent.document.querySelector('title') \
+                
+            const oldObserver = window.parent.titleObserver
+            if (oldObserver) {{
+                oldObserver.disconnect()
+            }} \
+
+            const newObserver = new MutationObserver(function(mutations) {{
+                const target = mutations[0].target
+                if (target.text !== '{title}') {{
+                    target.text = '{title}'
+                }}
+            }}) \
+
+            newObserver.observe(title, {{ childList: true }})
+            window.parent.titleObserver = newObserver \
+
+            title.text = '{title}'
+        </script>" />
+    """)
+
+
+set_page_title("My new title")
 st.set_page_config(
 
     page_title='Syngas Operating Parameter Analysis'
