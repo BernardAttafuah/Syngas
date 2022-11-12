@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 st.set_page_config(
-    page_title='PBR Operating Condition Analysis'   
+    page_title='Syngas Operating Condition Analysis'   
 )
 st.markdown(
 
