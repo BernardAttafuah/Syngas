@@ -3,12 +3,9 @@ from streamlit_option_menu import option_menu
 import streamlit as st
 import sympy as smp
 from sympy import*
-st.set_page_config(
-          page_title="Syngas Operating Parameter Process Analysis",
-          page_icon="🧊",
-          layout="wide",
-          initial_sidebar_state="expanded",
-          )
+import pandas as pd
+import numpy as np
+
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -27,11 +24,10 @@ mystyle = '''
 
 st.markdown(mystyle, unsafe_allow_html=True)
     
-EXAMPLE_NO = 1
 
-def streamlit_menu(example=1):
-    if example == 1:
-        # 1. as sidebar menu
+
+def streamlit_menu():
+    if streamlit_menu:
         with st.sidebar:
             selected = option_menu(
                 menu_title="App Menu",  
@@ -42,7 +38,7 @@ def streamlit_menu(example=1):
             )
         return selected
     
-selected = streamlit_menu(example=EXAMPLE_NO)
+selected = streamlit_menu()
 if selected == 'Home':
     
     def streamlit_menu_main():
@@ -69,7 +65,7 @@ if selected == 'Home':
          
          st.info('This work was inspired by the following personalities;')
          
-         st.markdown('**Caleb Selasi Sam**')
+         st.markdown('**Caleb Selase Sam**')
          st.markdown('**Prosper Jonas Ako**')
          st.markdown('**Danyl Oppong**')
          st.markdown('**Theophilus Baidoo**')
@@ -77,8 +73,33 @@ if selected == 'Home':
 
          
     if selectit == "Default Values":
-        st.write('This is Bernard')
-    
+        
+        df = pd.read_csv('default.csv'
+
+        )
+        st.table(df)
+        data = {'Methane Flow Rate (mol/sec)':500,
+            'Steam Flow Rate (mol/sec)':800,
+            'Initial Temperature (K)':1000,
+            'Initial Pressure (bar)':20,
+            #'Lower Integral Limit (kg)':min,
+            'Upper Integral Limit (kg)':0.01
+            }
+        features = pd.DataFrame(data,index=[0])
+
+#st.dataframe(features)
+        st.table(data=features)
+        st.latex(r'''
+-       \Delta H_{rxn}^o = 205900 \frac{J}{mol}
+        ''')
+        st.info('The default values can be tweaked for better performance eg. Higher Conversion using **Graph Analysis** Tab from the **Navbar**' )
+
+
+
+
+#displaying the dataframe in a static manner
+
+
 
 if selected == "Equations - Used":
 
