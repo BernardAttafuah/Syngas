@@ -3,6 +3,8 @@
 
 ##### Results were compared to MATLAB and Hand Calculations; There were no variations in answers.
 
+![non-Isothermal_with_isobaric process](https://user-images.githubusercontent.com/107581993/201498139-3f92de34-8a0f-4be0-8ae3-eed4bfe11e32.png)
+
 ##### The Analysis can be split into a Temperature Profile and a Conversion Profile.
 
 ##### This work was inspired by the following personalities;
