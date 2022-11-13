@@ -5,52 +5,22 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
-mystyle = '''
-    <style>
-        p {
-            text-align: center;
-        }
-        
-        .viewerBadge_link__1S137{
-	    display: none;
-        }
-    </style>
-    '''
-
-st.markdown(mystyle, unsafe_allow_html=True)
-st.set_page_config(
-    page_title='Syngas Operating Condition Analysis'   
-)
-   
 st.set_page_config(
 
-    page_title='Syngas Operating Parameter Analysis'
+    page_title='Syngas Operating Condition Analysis'
     
 )
-
-
 hide_streamlit_style = """
             <style>
             #MainMenu {visibility: hidden;}
-            
-	    viewerBadge_link__1S137{
-	    visibility: hidden;}										
+            footer {visibility: hidden;}
+             p {
+            text-align: center;
+            }
             </style>
+           
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-mystyle = '''
-    <style>
-        p {
-            text-align: center;
-        }
-    </style>
-    '''
-
-st.markdown(mystyle, unsafe_allow_html=True)
-st.set_page_config(
-    page_title='Syngas Operating Condition Analysis'   
-)
-    
 
 
 def streamlit_menu():
@@ -58,7 +28,7 @@ def streamlit_menu():
         with st.sidebar:
             selected = option_menu(
                 menu_title="App Menu",  
-                options=["Home","Equations - Used", "Graph Analysis",'About'],  
+                options=["Home", "Equations - Used", "Graph Analysis",'About'],  
                 icons=["house", "book", 'book',"envelope"],  
                 menu_icon="cast", 
                 default_index=0
