@@ -52,7 +52,7 @@ def streamlit_menu():
         with st.sidebar:
             selected = option_menu(
                 menu_title="App Menu",  
-                options=["Home", "Equations - Used", "Graph Analysis",'About'],  
+                options=["Home"],  
                 icons=["house", "book", 'book',"envelope"],  
                 menu_icon="cast", 
                 default_index=0
