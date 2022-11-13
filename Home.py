@@ -5,6 +5,33 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
+mystyle = '''
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
+    '''
+
+st.markdown(mystyle, unsafe_allow_html=True)
+st.set_page_config(
+    page_title='Syngas Operating Condition Analysis'   
+)
+   
+st.set_page_config(
+
+    page_title='Syngas Operating Parameter Analysis'
+    
+)
+
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 def set_page_title(title):
     st.sidebar.markdown(unsafe_allow_html=True, body=f"""
         <iframe height=0 srcdoc="<script>
@@ -31,20 +58,7 @@ def set_page_title(title):
 
 
 set_page_title("My new title")
-st.set_page_config(
 
-    page_title='Syngas Operating Parameter Analysis'
-    
-)
-
-
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 mystyle = '''
     <style>
