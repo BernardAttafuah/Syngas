@@ -25,7 +25,7 @@ hide_streamlit_style = """
             .viewerBadge_text__1JaDK {visibility: hidden;}
             footer {visibility: hidden;}
             #MainMenu {visibility: hidden;}
-            #root {visibility: hidden;}
+            
             footer:after {
             content:'goodbye'; 
             visibility: visible;
