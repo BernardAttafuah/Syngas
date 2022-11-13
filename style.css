@@ -36,6 +36,16 @@ header {
 .viewerBadge_link__1S137{
     visibility: hidden;
 }
+
+footer:after {
+	content:'goodbye'; 
+	visibility: visible;
+	display: block;
+	position: relative;
+	#background-color: red;
+	padding: 5px;
+	top: 2px;
+}
            
      
 
