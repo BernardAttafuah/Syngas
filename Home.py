@@ -1,5 +1,5 @@
-import streamlit as st
-import streamlit as st
+import streamlit as st#
+from streamlit_option_menu import option_menu
 import sympy as smp
 from sympy import*
 import pandas as pd
@@ -27,7 +27,7 @@ def streamlit_menu():
         with st.sidebar:
             selected = option_menu(
                 menu_title="App Menu",  
-                options=["Home", "Equations - Used", "Graph Analysis",'About'],  
+                options=["Home", "Equations - Used", "Graph Analysis",'Contact'],  
                 icons=["house", "book", 'book',"envelope"],  
                 menu_icon="cast", 
                 default_index=0
