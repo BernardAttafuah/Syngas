@@ -25,8 +25,15 @@ hide_streamlit_style = """
             .viewerBadge_text__1JaDK {visibility: hidden;}
             footer {visibility: hidden;}
             #MainMenu {visibility: hidden;}
-           
-            
+            footer:after {
+            content:'goodbye'; 
+            visibility: visible;
+            display: block;
+            position: relative;
+            #background-color: red;
+            padding: 5px;
+            top: 2px;
+                }
              p {
             text-align: center;
             }
@@ -329,5 +336,5 @@ if selected == "About":
 
     icon_size = 26
     st_button('linkedin', 'https://www.linkedin.com/in/bernardattafuah/', 'Follow me on LinkedIn', icon_size)
-    st_button('github', 'https://github.com/BernardAttafuah/Gasification', 'Github Page', icon_size)
+    st_button('github', 'https://github.com/BernardAttafuah/Syngas', 'Github Page', icon_size)
     st_button('email', 'https://sendfox.com/dataprofessor/', 'bernardattafuah@gmail.com', icon_size)
