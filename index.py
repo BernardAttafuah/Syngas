@@ -5,6 +5,16 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
+
+hidemenu = '''
+<style>
+.viewerBadge_link__1S137{
+visibility:hidden;}
+
+
+
+</style>
+'''
 st.set_page_config(
 
     page_title='Syngas Operating Condition Analysis'
@@ -25,6 +35,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 def streamlit_menu():
+    st.markdown(hidemenu,unsafe_allow_html=True)
     if streamlit_menu:
         with st.sidebar:
             selected = option_menu(
