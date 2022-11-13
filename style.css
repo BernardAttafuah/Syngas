@@ -1,6 +1,3 @@
-.viewerBadge_container__1QSob
-    {display:none !important;}
-
 
 .css-12oz5g7.egzxvld2 {
     padding-top: 0px;
@@ -27,11 +24,15 @@ MainMenu {
     visibility: hidden;
 }
 
+footer {
+    visibility: hidden;
+}
+
+   
+
 header {
     visibility: hidden;
 }
-.viewerBadge_link__1S137 {
-    dispay: none;
-}
+
      
 
