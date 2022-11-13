@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 import streamlit as st
 import sympy as smp
 from sympy import*
