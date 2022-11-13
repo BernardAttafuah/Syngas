@@ -35,7 +35,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
+@st.cache
 def streamlit_menu():
     st.markdown(hidemenu,unsafe_allow_html=True)
     if streamlit_menu:
@@ -311,7 +311,7 @@ if selected == "Graph Analysis":
 
 
     ####################################################
-if selected == "Contact":
+if selected == "About ":
     import streamlit as st
     from contact_function import st_button, load_css
     from PIL import Image
