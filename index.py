@@ -23,8 +23,9 @@ st.set_page_config(
 hide_streamlit_style = """
             <style>
             .viewerBadge_text__1JaDK {visibility: hidden;}
+            viewerBadge_text__1JaDK {visibility: hidden;}
             #MainMenu {visibility: hidden;}
-            #root {visibility: hidden;}
+           
             footer {visibility: hidden;}
              p {
             text-align: center;
