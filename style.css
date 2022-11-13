@@ -33,6 +33,14 @@ footer {
 header {
     visibility: hidden;
 }
+.viewerBadge_container__1QSob {
+    z-index: 50;
+    font-size: .875rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+
 .viewerBadge_link__1S137{
     visibility: hidden;
 }
