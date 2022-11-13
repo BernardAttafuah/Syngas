@@ -10,6 +10,10 @@ mystyle = '''
         p {
             text-align: center;
         }
+        
+        viewerBadge_link__1S137{
+	    display: visibility;
+        }
     </style>
     '''
 
