@@ -26,7 +26,7 @@ hide_streamlit_style = """
             viewerBadge_text__1JaDK {visibility: hidden;}
             #MainMenu {visibility: hidden;}
            
-            footer {visibility: hidden;}
+            
              p {
             text-align: center;
             }
