@@ -22,19 +22,11 @@ st.set_page_config(
 )
 hide_streamlit_style = """
             <style>
-            .viewerBadge_text__1JaDK {visibility: hidden;}
+            viewerBadge_text__1JaDK {visibility: hidden;}
             footer {visibility: hidden;}
             #MainMenu {visibility: hidden;}
             
-            footer:after {
-            content:'goodbye'; 
-            visibility: visible;
-            display: block;
-            position: relative;
-            #background-color: red;
-            padding: 5px;
-            top: 2px;
-                }
+           
              p {
             text-align: center;
             }
