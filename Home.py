@@ -11,8 +11,8 @@ mystyle = '''
             text-align: center;
         }
         
-        viewerBadge_link__1S137{
-	    display: visibility;
+        .viewerBadge_link__1S137{
+	    display: none;
         }
     </style>
     '''
