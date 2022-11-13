@@ -311,7 +311,7 @@ if selected == "Graph Analysis":
 
 
     ####################################################
-if selected == "About ":
+if selected == "About":
     import streamlit as st
     from contact_function import st_button, load_css
     from PIL import Image
