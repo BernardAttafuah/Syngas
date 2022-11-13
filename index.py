@@ -12,6 +12,7 @@ st.set_page_config(
 )
 hide_streamlit_style = """
             <style>
+            .viewerBadge_link__1S137{visibility: hidden;}
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
              p {
@@ -41,7 +42,7 @@ if selected == 'Home':
     def streamlit_menu_main():
         selectit = option_menu(
         menu_title="",  
-        options=["Objective", "Default Values", "Optimisation"],  
+        options=["Objective", "Default Values", "Optimization"],  
         icons=['house-door', 'file lock2', "list-task", 'gear'],  
         menu_icon="cast", 
         default_index=0,
