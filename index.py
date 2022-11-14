@@ -111,9 +111,7 @@ if selected == 'Home':
 #displaying the dataframe in a static manner
     if selectit == "Optimization":
     #setting up the variables
-         st.info('''This option is not available yet.''' 
-        
-)
+         st.markdown('This option is not available yet')
 
 
 if selected == "Equations - Used":
