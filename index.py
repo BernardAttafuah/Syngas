@@ -98,7 +98,9 @@ if selected == 'Home':
     
     if selectit == 'PFD':
         st.image('PFD.png')
-
+    
+    if selectit == 'P&ID':
+        st.image('P&ID.png')
 
 
 #displaying the dataframe in a static manner
