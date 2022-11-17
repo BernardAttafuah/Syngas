@@ -41,8 +41,8 @@ if selected == 'Home':
     def streamlit_menu_main():
         selectit = option_menu(
         menu_title="",  
-        options=["Objective", "Default Values", "Optimization"],  
-        icons=['house-door', 'file lock2', "list-task", 'gear'],  
+        options=["Objective", "Default Values", "Animation",'PFD','P&ID'],  
+        icons=['house-door', 'file lock2', "camera-reels-fill", 'pip-fill','pip'],  
         menu_icon="cast", 
         default_index=0,
         orientation='horizontal'
@@ -92,12 +92,16 @@ if selected == 'Home':
         st.info('The default values can be tweaked for better performance eg. Higher Conversion using **Graph Analysis** Tab from the **Navbar**' )
 
          
-    if selectit == "Optimization":
-        st.write('This')
+    if selectit == "Animation":
+        st.write('Not available yet')
+
+    
+    if selectit == 'PFD':
+        st.image('PFD.png')
+
 
 
 #displaying the dataframe in a static manner
-
 
 
 if selected == "Equations - Used":
@@ -544,7 +548,11 @@ if selected == "Temperature and Mole Flow Graph Analysis":
 #########################################################
 
 
-    ####################################################
+
+
+
+
+####################################################
 if selected == "About":
     import streamlit as st
     from contact_function import st_button, load_css
