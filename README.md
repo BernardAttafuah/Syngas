@@ -11,7 +11,7 @@
 
 ![mole balance profile](https://user-images.githubusercontent.com/107581993/202868232-b65952a5-308e-4062-b5e0-dc724dcb30aa.png)
 
-##### The Analysis can be split into a Temperature Profile and a Conversion Profile.
+##### The Analysis can be split into a Temperature Profile, Conversion Profile and Mole Balance Profile.
 
 ##### This work was inspired by the following personalities;
 * Caleb Selase Sam
