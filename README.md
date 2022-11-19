@@ -1,4 +1,4 @@
-# Syngas Operating Parameter Analysis - Temperature and Conversion Profiles
+# Syngas Operating Parameter Analysis - Temperature, Conversion and Mole Balance Profiles.
 ##### This user-friendly app is aimed at analysing the effects of operating parameters such as Methane and Steam flowrates, Temperature, Pressure etc of a Syngas Process.
 
 ##### Results were compared to MATLAB and Hand Calculations; There were no variations in answers.
