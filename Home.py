@@ -5,7 +5,7 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
-@st.cache
+
 st.set_page_config(
 
     page_title='Syngas Operating Condition Analysis'
@@ -23,7 +23,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
+@st.cache
 def streamlit_menu():
     if streamlit_menu:
         with st.sidebar:
