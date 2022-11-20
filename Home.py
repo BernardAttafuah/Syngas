@@ -5,7 +5,7 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
-@st.cache(suppress_st_warning=True)
+
 
 
 st.set_page_config(
@@ -25,7 +25,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
+@st.cache(suppress_st_warning=True)
 def streamlit_menu():
     if streamlit_menu:
         with st.sidebar:
