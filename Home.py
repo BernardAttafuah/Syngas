@@ -5,7 +5,8 @@ import sympy as smp
 from sympy import*
 import pandas as pd
 import numpy as np
-@st.cache
+@st.cache(suppress_st_warning=True)
+
 
 st.set_page_config(
 
