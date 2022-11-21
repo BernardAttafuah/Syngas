@@ -169,7 +169,6 @@ if selected == "Temperature & Conversion Graph Analysis":
     from scipy import *
     from scipy.integrate import *
     import math
-    import IPython as ipy
     import numpy as np
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -290,7 +289,6 @@ if selected == "Mole Flow & Conversion Graph Analysis":
     from scipy import *
     from scipy.integrate import *
     import math
-    import IPython as ipy
     import numpy as np
     import pandas as pd
     import matplotlib.pyplot as plt
@@ -420,7 +418,6 @@ if selected == "Temperature and Mole Flow Graph Analysis":
     from scipy import *
     from scipy.integrate import *
     import math
-    import IPython as ipy
     import numpy as np
     import pandas as pd
     import matplotlib.pyplot as plt
