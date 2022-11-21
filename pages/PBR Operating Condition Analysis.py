@@ -3,7 +3,6 @@ import pandas
 from scipy import *
 from scipy.integrate import *
 import math
-import IPython as ipy
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
